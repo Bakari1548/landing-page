@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans serif;
 }
 
 
@@ -13,12 +13,10 @@
  
 header{
     background: linear-gradient(90deg, #041c655a 10%, #041D65 79%, #041D65 100%);
-    /* background-color: rgb(74, 112, 166); */
     height: 90px; 
-    /* width: 100%; */
+    width: 100%;
     padding: 10px 0;
     display: block;
-   
 }
 .logo{
     height: 100px;
@@ -43,7 +41,7 @@ ul{
     margin: 0 50px;
 
 }
-ul li{
+.nav-links{
     list-style: none;
 }
 li a{
@@ -72,6 +70,7 @@ li a:hover{
 .left-section h1{
     color: #fff;
     font-size: 45px;
+    font-weight: bolder;
 }
 
 .hero{
@@ -80,9 +79,9 @@ li a:hover{
     flex-direction: row;
     justify-content: space-around;
     /* border-radius: 15px; */
-    font-size: 22px;
+    font-size: 18px;
     margin: 0;
-    padding: 60px;
+    padding: 10px 40px;
 }
 
 .texte span{
@@ -94,11 +93,11 @@ li a:hover{
     gap: 20px;
 }
 .inscrire{
-    width: 150px;
-    border-radius: 25px;
-    font-size: 20px;
+    width: 130px;
+    border-radius: 33px;
+    font-size: 15px;
     border: none;
-    padding: 15px 15px;
+    padding: 10px;
     background-color: #041D65;
     color: white;
     /* margin-bottom: 30px; */
@@ -129,8 +128,8 @@ li a:hover{
    
 }
 .right-section{
-    width: 50%;
-    height: 50%;
+    width: 45%;
+    height: 45%;
 }
 .image-hero{
     width: 90%;
@@ -152,7 +151,7 @@ h2{
     justify-content: center;
     flex-direction: row;
 } 
- */ */
+
 
 /* Section container A propos de SenSpace */
 
@@ -177,7 +176,7 @@ h2{
     flex-direction: column;
 }
 .liste li{
-    list-style: url();
+    /* list-style: url(); */
 }
 /* ::before {
     box-sizing: border-box;
@@ -523,10 +522,48 @@ h2, h1{
 
 .info-senespace{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10%;
+    padding: 40px 80px;
 }
 
 .div1-info-senespace{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.div1-info-senespace h3{
+    color: #37517e;
+    font-weight: 900;
+}
+.div1-info-senespace p{
+    font-size: 14px;
+    line-height: 24px;
+    color: #5e5e5e;
+}
+
+.div2-info-senespace, .div3-info-senespace{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.div2-info-senespace h4, .div3-info-senespace h4, .div4-info-senespace h4{
+    color: #37517e;
+    font-weight: 900;
+    font-size: 17px;
+    margin-left: 60px;
+}
+.footer-links, .footer-services{
+    display: flex;
+    flex-direction: column;
+    line-height: 8px;
+    list-style: none
+}
+.link-service{
 
 }
+.footer-links li a, .footer-services li a{
+    color: #5e5e5e;
+    font-size: 14px;
+}
+
