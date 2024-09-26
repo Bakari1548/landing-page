@@ -38,6 +38,7 @@ btnDisplay2.addEventListener('click', (e) => {
     console.log(btnDisplay2IsPressed);
     imageFleche2.style.transform = 'rotate(180deg)'
     imageFleche2.setAttribute('style', 'transition: 500ms;')
+    
 
     if(text2.style.display === "block"){
         imageFleche2.setAttribute('style', 'transition: 500ms;')

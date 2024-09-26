@@ -209,16 +209,18 @@ h2{
                 Bakari 
     ---------------------------------*/
 
-/* .a-propos{
-} */
+.propositions-et-services{
+    background-color: #c4cfea3b;
+}
 h2, h1{
     color: #41578f;    
 }
 .propositions{
-    background-color: #c4cfea3b;
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     gap: 30px;
+    margin-bottom: 50px;
 }
 #textProposition1, #textProposition2, #textProposition3{
     display: none;
@@ -231,15 +233,18 @@ h2, h1{
     padding: 30px;
     gap: 30px;
 }
+.left-div h1{
+    color: #37517e;
+}
 .h3{
     display: flex;
     justify-content: space-between;
     font-weight: 600;
 }
-h3{
-    color: #41578f;
-   display: flex;
-   gap: 30px;
+.proposition-1 h3, .proposition-2 h3, .proposition-3 h3{
+    color: #37517e;
+    display: flex;
+    gap: 30px;
 }
 .h3 span{
     color: #1226a4;
@@ -261,7 +266,6 @@ h3{
     width: 80%;
     background-color: #fff;
     padding: 20px;
-    transition: 500ms;
 }
 
 .right-div img{
@@ -270,7 +274,9 @@ h3{
 }
 
 .services{
+    margin-top: 50px;
     padding: 30px;
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -296,15 +302,36 @@ h3{
     height: 500px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     padding: 30px;
+}
+.div-services:hover{
+    animation: survol 1s alternate forwards;
+}
+@keyframes survol {
+    0%{
+        translate: 0 30px;
+    }
+    100%{
+        translate: 0 -30px
+    }
+}
+.div-services img{
+    margin-left: 30px;
+    width: 35px;
+    height: 35px;
+}
+.div-services h2{
+    text-align: left;
+    color: #1226a4;
+    font-weight: 600;
+    font-size: 25px;
 }
 
 .section-cta{
     background-image: url(/images/cta-bg.jpg);
     background-repeat: no-repeat;
-    /* background: url(/images/cta-bg.jpg); */
-    /* background: scroll; */
+    
 
 }
 .cta{
@@ -313,7 +340,6 @@ h3{
     color: #fff;
     flex-direction: column;
     justify-content: flex-start;
-    
     gap: 30px;
 }
 .cta h2{
@@ -346,7 +372,7 @@ h3{
 
 .void{
     height: 100px;
-    background-color: rgba(128, 128, 128, 0.137);
+    background-color: #f3f5fa;
 }
 
 
@@ -363,34 +389,43 @@ h3{
 }
 .contact h1{
     font-size: 30px;
+    color: #37517e;
+    font-weight: bold;
 }
 .div-contact{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 10px 80px;
 }
 
 /* Right contact */
-/* .rght-contact{
-    
-} */
-form{
+
+.right-contact{
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
     border-top: 3px solid #041D65;
     border-bottom: 3px solid #041D65;
-    /* border: 1px solid black; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-form input{
+.right-contact label{
+    text-align: left;
+
+}
+.right-contact input{
     padding: 10px 20px;
     border-radius: 5px;
-    border: 3px solid rgba(128, 128, 128, 0.582)
+    border: 1px solid rgba(128, 128, 128, 0.582)
 }
-form textarea{
+.right-contact textarea{
     height: 300px;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.582)
+
 }
 .name-email{
     display: flex;
@@ -407,13 +442,13 @@ form textarea{
     gap: 10px;
 }
 #btnSend{
-    padding: 15px 23px;
-    width: 120px;
-    border-radius: 20px;
+    padding: 12px 23px;
+    width: 130px;
+    border-radius: 28px;
     color: #fff;
     border: none;
     background-color: #041D65;
-    margin: 0 auto;
+    margin: 10px auto;
 } 
 #btnSend:hover{
     background-color: #209dd8;
@@ -422,14 +457,76 @@ form textarea{
 
 /* Left contact */
 .left-contact{
+    width: 60%;
     border-top: 3px solid #041D65;
     border-bottom: 3px solid #041D65;
     padding: 20px;
-
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .address, .email, .tels{
     color: #37517e  ;
+    text-align: left;
 }
 .address h4, .email h4, .tels h4{
     font-weight: 600;
+}
+
+/*---------------------------
+    Newsletter
+--------------------------- */
+.newsletter{
+    background-color: #c4cfea3b;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 20px;
+    margin: 30px 0; 
+}
+.newsletter h4{
+    color: #041D65;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+.newsletter p{
+    text-align: center;
+}
+.form-newsletter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.form-newsletter input[type=submit]{
+    padding: 10px 20px;
+    width: 120px;
+    border-radius: 28px;
+    color: #fff;
+    border: none;
+    background-color: #041D65;
+    margin: 0 -25px;
+}
+.form-newsletter input[type=email]{
+    margin: 0 -10px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #fff;
+    width: 40%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+/* --------------------------------
+            Footer
+-------------------------------- */
+
+.info-senespace{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.div1-info-senespace{
+
 }
