@@ -27,9 +27,8 @@ header{
    
 }
 .logo{
-    height: 120px;
-    width: 200px;
-    /* padding: 10px; */
+    height: 100px;
+    width: 180px;
 }
 nav{
     background-color: transparent;
@@ -52,13 +51,15 @@ ul li{
     list-style: none;
 }
 li a{
+    text-decoration: none;
     color: #fff;
     font-size: 20px;
 } 
-a{
-    text-decoration: none;
-
+li a:hover{
+    color: #041D65;
+    transition: 500ms;
 }
+
 
 
 
@@ -115,8 +116,14 @@ a{
     border: none;
     font-size: 20px;
     background-color: transparent;
+    
 
 }
+.btn-voir img{
+    width: 30px;
+    height: 30px;
+}
+
 .btn-voir:hover{
     color: #fff;
 }
@@ -130,8 +137,17 @@ a{
     height: 50%;
 }
 .image-hero{
-    width: 80%;
-    height: 90%;
+    width: 90%;
+    height: 100%;
+    animation: lady 3s infinite alternate;
+}
+@keyframes lady {
+    0%{
+        translate: 0 60px;
+    }
+    100%{
+        translate: 0 -60px;
+    }
 }
 
 h2{
@@ -179,6 +195,11 @@ h2{
     color: #041D65;
     font-weight: 500;
     margin: 15px;
+}
+.voir:hover{
+    color: #fff;
+    background-color: #041D65;
+    transition: 500ms;
 }
 
 
@@ -282,13 +303,20 @@ h3{
     padding: 30px;
 }
 
-.cta{
-    padding: 50px;
+.section-cta{
     background-image: url(/images/cta-bg.jpg);
     background-repeat: no-repeat;
-    color: #fff;
+    /* background: url(/images/cta-bg.jpg); */
+    /* background: scroll; */
+
+}
+.cta{
     display: flex;
+    padding: 50px;
+    color: #fff;
     flex-direction: column;
+    justify-content: flex-start;
+    
     gap: 30px;
 }
 .cta h2{
@@ -307,15 +335,17 @@ h3{
     margin: 0;
     padding: 0;
 }
-.cta-text button{
-    width: 230px;
-    border-radius: 30px;
-    font-size: 18px;
+.cta-text a{
+    display: inline-block;
+    text-decoration: none;
     color: #fff;
-    font-weight: 550;
-    background-color: transparent;
-    border: 3px solid #fff;
-}
+    font-size: 15px;
+    font-weight: 500;
+    border: 2px solid #fff;
+    padding: 12px 40px;
+    margin: 10px;
+    border-radius: 20px;
+} 
 
 .void{
     height: 100px;
@@ -373,6 +403,10 @@ form textarea{
     border-radius: 20px;
     color: #fff;
     border: none;
-    background-color: #1226a4;
+    background-color: #041D65;
     margin: 0 auto;
 } 
+#btnSend:hover{
+    background-color: #209dd8;
+    transition: 500ms;
+}
