@@ -9,12 +9,6 @@
                 Sokhna 
     ---------------------------------*/
 
- body{
-    margin: 0;
-   
-
-}
-
 /* Header */
  
 header{
@@ -22,22 +16,23 @@ header{
     /* background-color: rgb(74, 112, 166); */
     height: 90px; 
     /* width: 100%; */
-    padding: 20px;
+    padding: 10px 0;
     display: block;
    
 }
 .logo{
     height: 100px;
     width: 180px;
+    margin: 0 50px;
 }
 nav{
     background-color: transparent;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
     align-items: center;
-    margin: 0px;
+    /* margin: 0px; */
     
 }
 ul{
@@ -45,6 +40,7 @@ ul{
     flex-direction: row;
     justify-content: center;
     gap: 30px;
+    margin: 0 50px;
 
 }
 ul li{
@@ -139,14 +135,15 @@ li a:hover{
 .image-hero{
     width: 90%;
     height: 100%;
-    animation: lady 3s infinite alternate;
+    animation: lady 3s infinite alternate ;
+    animation-delay: 1s;
 }
 @keyframes lady {
     0%{
-        translate: 0 60px;
+        translate: 0px;
     }
     100%{
-        translate: 0 -60px;
+        translate: 0px -60px;
     }
 }
 
@@ -352,6 +349,11 @@ h3{
     background-color: rgba(128, 128, 128, 0.137);
 }
 
+
+
+/* ----------------------------------
+        Contact
+--------------------------------- */
 .contact{
     margin: 80px 0;
     text-align: center;
@@ -366,22 +368,29 @@ h3{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 50px;
 }
 
+/* Right contact */
+/* .rght-contact{
+    
+} */
 form{
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    border: 1px solid black;
+    border-top: 3px solid #041D65;
+    border-bottom: 3px solid #041D65;
+    /* border: 1px solid black; */
 }
 form input{
     padding: 10px 20px;
     border-radius: 5px;
-    border: 1px solid rgba(128, 128, 128, 0.582)
+    border: 3px solid rgba(128, 128, 128, 0.582)
 }
 form textarea{
-    height: 100px;
+    height: 300px;
 }
 .name-email{
     display: flex;
@@ -409,4 +418,18 @@ form textarea{
 #btnSend:hover{
     background-color: #209dd8;
     transition: 500ms;
+}   
+
+/* Left contact */
+.left-contact{
+    border-top: 3px solid #041D65;
+    border-bottom: 3px solid #041D65;
+    padding: 20px;
+
+}
+.address, .email, .tels{
+    color: #37517e  ;
+}
+.address h4, .email h4, .tels h4{
+    font-weight: 600;
 }
