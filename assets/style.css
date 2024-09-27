@@ -54,8 +54,25 @@ li a:hover{
     transition: 500ms;
 }
 
+/* 
+    --------------------------------
+                Hero
+    -------------------------------- */
 
-
+.arrow{
+    background-color: #041D65;
+    padding: 5px 10px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 25px;
+    transition: 0.5s;
+    border: none;
+    
+    position: fixed;
+}
+.arrow:hover{
+    background-color: #209dd8;
+}
 
 .left-section{
   width: 50%;
@@ -107,20 +124,18 @@ li a:hover{
 }
 
 .btn-voir{
+    color: #fff;
     width: 150px;
     border: none;
-    font-size: 20px;
+    font-size: 18px;    
     background-color: transparent;
-    
-
 }
-.btn-voir img{
-    width: 30px;
-    height: 30px;
-}
+/* .btn-voir i:hover{
+    color: black;
+} */
 
-.btn-voir:hover{
-    color: #fff;
+.btn-voir .bi:hover{
+    color: #041D65;
 }
 .img{
     width: 25px;
@@ -176,7 +191,8 @@ h2{
     flex-direction: column;
 }
 .liste li{
-    /* list-style: url(); */
+    list-style: none;
+    margin-left: -80px;
 }
 /* ::before {
     box-sizing: border-box;
@@ -240,6 +256,14 @@ h2, h1{
     justify-content: space-between;
     font-weight: 600;
 }
+.h3 h3{
+    transition: 0.5s;
+    font-size: 20px;
+    font-weight: 600;
+}
+.h3 h3:hover{
+    color: #209dd8;
+}
 .proposition-1 h3, .proposition-2 h3, .proposition-3 h3{
     color: #37517e;
     display: flex;
@@ -265,6 +289,7 @@ h2, h1{
     width: 80%;
     background-color: #fff;
     padding: 20px;
+    
 }
 
 .right-div img{
@@ -523,11 +548,18 @@ h2, h1{
 .info-senespace{
     display: flex;
     flex-direction: row;
-    gap: 10%;
+    gap: 50px;
     padding: 40px 80px;
+}
+.div1-info-senespace, .div2-info-senespace, 
+.div3-info-senespace{
+    width: 22%;
+    margin: 0;
+    padding: 0;
 }
 
 .div1-info-senespace{
+    
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -547,11 +579,11 @@ h2, h1{
     flex-direction: column;
     gap: 20px;
 }
-.div2-info-senespace h4, .div3-info-senespace h4, .div4-info-senespace h4{
+.div2-info-senespace h4, .div3-info-senespace h4{
     color: #37517e;
     font-weight: 900;
     font-size: 17px;
-    margin-left: 60px;
+    margin-left: 80px;
 }
 .footer-links, .footer-services{
     display: flex;
@@ -559,11 +591,81 @@ h2, h1{
     line-height: 8px;
     list-style: none
 }
-.link-service{
 
-}
 .footer-links li a, .footer-services li a{
     color: #5e5e5e;
     font-size: 14px;
 }
 
+.div4-info-senespace{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 10px;
+}
+.div4-info-senespace h4{
+    display: inline;
+    text-align: left;
+    color: #37517e;
+    font-weight: 900;
+    font-size: 17px;
+}
+.div4-info-senespace p{
+    font-size: 14px;
+}
+
+.socials-networks{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.twitter , .facebook , .skype , 
+.instagram , .linkedin {
+    color: #fff;
+    font-weight: 900;
+    font-size: 15  px;
+    background-color: #041D65;
+    padding: 6px 25px 6px 10px;
+    width: 25px;
+    border-radius: 60%;
+    transition: 0.5s;
+}
+.twitter:hover, .facebook:hover, .skype:hover, .instagram:hover, .linkedin:hover{
+    background-color: #209dd8;
+}
+
+/*
+    --------------------------------------
+                Droit d'auteur 
+    --------------------------------------                
+*/
+
+.droit-auteur{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #37517e;
+    padding: 50px;
+    height: 100px;
+    align-content: center;
+}
+.copyright{
+    color: #fff;
+    font-size: 14px;
+    /* margin: 30px; */
+}
+.design{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    color: #fff;
+}
+.design a{
+    color: #041D65;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.design a:hover{
+    color: #209dd8;
+}
