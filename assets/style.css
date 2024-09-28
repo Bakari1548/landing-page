@@ -67,7 +67,6 @@ li a:hover{
     font-size: 25px;
     transition: 0.5s;
     border: none;
-    
     position: fixed;
 }
 .arrow:hover{
@@ -179,6 +178,17 @@ h2{
     color: #041D65;
     font-weight: 600;
     font-size: 35px;
+}
+.p-void{
+    width: 30px;
+    border: 1px solid #5e5e5e;
+}
+.p-void span{
+    width: 30px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 3px solid #1226a4;
 }
 .left-a-propos{
     padding: 30px;
@@ -411,7 +421,7 @@ h2, h1{
     flex-direction: column;
     gap: 50px;
 }
-.contact h1{
+.title-contact{
     font-size: 30px;
     color: #37517e;
     font-weight: bold;

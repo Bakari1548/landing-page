@@ -68,3 +68,11 @@ btnDisplay3.addEventListener('click', (e) => {
 
     }
 })
+
+
+let arrow = document.querySelector('.arrow');
+arrow.style.visibility = 'hidden'
+
+arrow.addEventListener('scroll', () => {
+    arrow.style.visibility = 'visible'
+})
