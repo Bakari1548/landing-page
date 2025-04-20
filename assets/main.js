@@ -14,6 +14,18 @@ let text1 = document.getElementById('textProposition1');
 let text2 = document.getElementById('textProposition2'); 
 let text3 = document.getElementById('textProposition3'); 
 
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
 // divText1.style.trasition = '500ms'
 
 btnDisplay1.addEventListener('click', (e) => {
